@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Voucher Lauwers</title>
+    <style>
+        body { font-family: sans-serif; margin: 0; padding: 5px; color: #000; line-height: 1.2; }
+        .container { border: 2px solid #28a745; border-radius: 8px; overflow: hidden; }
+        
+        /* Header */
+        .header { background: #28a745; color: white; padding: 8px; text-align: center; }
+        .po-box { background: #fff; color: #28a745; display: inline-block; padding: 4px 12px; border-radius: 5px; font-weight: bold; font-size: 18px; margin-top: 4px; border: 1px solid #000; }
+        
+        .section { padding: 10px 12px; border-bottom: 1px solid #ddd; }
+        .label { font-size: 11px; color: #666; text-transform: uppercase; font-weight: bold; display: block; margin-bottom: 2px; }
+        .value { font-size: 16px; font-weight: bold; display: block; }
+        
+        /* Hotel Info */
+        .hotel-name { font-size: 19px; color: #28a745; font-weight: 900; margin-bottom: 4px; display: block; }
+        .tel-link { color: #0052a5; text-decoration: none; font-weight: bold; font-size: 17px; }
+
+        /* Grid voor data */
+        .grid { display: flex; background: #f8f9fa; border-bottom: 1px solid #ddd; }
+        .grid-item { padding: 8px 12px; flex: 1; border-right: 1px solid #ddd; }
+        .grid-item:last-child { border-right: none; }
+
+        /* Kamer & Gasten */
+        .kamer-box { background: #e9ecef; padding: 8px 12px; border-bottom: 1px solid #ddd; }
+        .guest-table { width: 100%; margin-top: 5px; font-size: 14px; }
+        .guest-row { display: flex; justify-content: space-between; padding: 4px 0; border-top: 1px solid #ccc; }
+        .regime { color: #856404; background: #fff3cd; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-size: 12px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <div style="font-size: 14px; text-transform: uppercase;">Hotel Voucher</div>
+        <div class="po-box">PO: 1047750 / 1</div>
+        <div style="font-size: 10px; margin-top: 4px;">Issued: 22.mei.2026</div>
+    </div>
+
+    <!-- Hotel Adres & Tel -->
+    <div class="section">
+        <span class="hotel-name">PRIM'HOTEL BAGATELLE</span>
+        <span class="value" style="font-size: 14px;">LES BAS JARDINS 214</span>
+        <span class="value" style="font-size: 14px;">51530 DIZY (FRANCE)</span>
+        <div style="margin-top: 8px;">
+            <span class="label">Telefoonnummer</span>
+            <a href="tel:0033326510013" class="tel-link">00 33 3 26 51 00 13</a>
+        </div>
+    </div>
+
+    <!-- Aankomst / Duur / Vertrek -->
+    <div class="grid">
+        <div class="grid-item">
+            <span class="label">Aankomst</span>
+            <span class="value">05.JUN.2026</span>
+        </div>
+        <div class="grid-item" style="text-align: center; flex: 0.6;">
+            <span class="label">Nachten</span>
+            <span class="value">2 N</span>
+        </div>
+        <div class="grid-item">
+            <span class="label">Vertrek</span>
+            <span class="value">07.JUN.2026</span>
+        </div>
+    </div>
+
+    <!-- Kamer Informatie -->
+    <div class="kamer-box">
+        <span class="label">Gereserveerd Kamertype</span>
+        <span class="value">DBL: 1 x TWEEPERSOONSKAMER</span>
+    </div>
+
+    <!-- Gasten Lijst -->
+    <div class="section">
+        <span class="label">Gasten & Regime</span>
+        <div class="guest-row">
+            <span>Mr SLEEUWAERT FREDDY</span>
+            <span class="regime">HALFPENSION</span>
+            <span style="font-weight: bold;">64j</span>
+        </div>
+        <div class="guest-row">
+            <span>Mrs SLEEUWAERT VALERIE</span>
+            <span class="regime">HALFPENSION</span>
+            <span style="font-weight: bold;">35j</span>
+        </div>
+    </div>
+
+    <div style="padding: 10px; font-size: 10px; color: #666; text-align: center; background: #fafafa;">
+        Verzorgd door Reizen Lauwers | www.lauwers.be
+    </div>
+</div>
+
+</body>
+</html>
+<br>
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { font-family: sans-serif; margin: 0; padding: 5px; }
+        .emergency { background: #d93025; color: white; padding: 15px; border-radius: 10px; text-align: center; }
+        .tel { font-size: 26px; font-weight: bold; display: block; margin: 10px 0; }
+        .tips { font-size: 13px; padding: 10px; line-height: 1.4; }
+    </style>
+</head>
+<body>
+    <div class="emergency">
+        <b>NOODNUMMER (24u/24u)</b>
+        <a href="tel:034601813" style="color:white; text-decoration:none;" class="tel">03 / 460.18.13</a>
+    </div>
+    <div class="tips">
+        <b>Tips:</b>
+        <ul>
+            <li>Max 1 koffer p.p. (20kg)</li>
+            <li>Bagage is eigen verantwoordelijkheid</li>
+            <li>Geen waardevolle spullen in bus laten</li>
+        </ul>
+        <p style="text-align:center; color:#666;">Prettige reis! - Team Lauwers</p>
+    </div>
+	<!-- ... (Bestaande inhoud van Hotel & Noodnummers) ... -->
+<style>
+    .nav-footer { margin-top: 5px; padding: 5px; text-align: center; }
+    .btn-back { 
+        display: inline-block; 
+        background: #28a745; /* Groen, passend bij de hotelstijl */
+        color: white; 
+        padding: 15px 30px; 
+        text-decoration: none; 
+        border-radius: 10px; 
+        font-weight: bold; 
+        box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    }
+</style>
+<div class="nav-footer">
+    <a href="index.html" class="btn-back">⬅ Terug naar Menu</a>
+</div>
+</body>
+</html>

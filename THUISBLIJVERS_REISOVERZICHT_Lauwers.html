@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { font-family: sans-serif; margin: 0; padding: 5px; line-height: 1.2; }
+        .container { border: 2px solid #333; border-radius: 8px; overflow: hidden; }
+        .header { background: #555; color: white; padding: 8px; text-align: center; }
+        .po-box { background: #fff; color: #333; display: inline-block; padding: 4px 12px; border-radius: 5px; font-weight: bold; font-size: 18px; margin-top: 4px; }
+        .section { padding: 8px 12px; border-bottom: 1px solid #ddd; }
+        .label { font-size: 11px; color: #666; text-transform: uppercase; font-weight: bold; }
+        .value { font-size: 15px; font-weight: bold; display: block; }
+        .grid { display: flex; border-bottom: 1px solid #ddd; }
+        .grid-item { padding: 8px 12px; flex: 1; }
+        .br { border-right: 1px solid #ddd; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div style="font-size: 14px; font-weight: bold;">VOOR DE THUISBLIJVERS</div>
+        <div class="po-box">PO: 1047750 / 1</div>
+    </div>
+    <div class="section" style="background:#f9f9f9;">
+        <span class="label">Heenreis</span>
+        <span class="value">05/06/26 om 04:50 (Bus 61)</span>
+        <span style="font-size:12px;">Lummen - Carpool E314</span>
+    </div>
+    <div class="section" style="background:#f9f9f9;">
+        <span class="label">Terugreis</span>
+        <span class="value">07/06/26 om 22:10 (Bus 61)</span>
+    </div>
+    <div class="section">
+        <span class="label">Verblijf Adres</span>
+        <span class="value">PRIM'HOTEL BAGATELLE</span>
+        <span style="font-size:14px;">Les Bas Jardins 214, 51530 DIZY</span>
+        <span class="value" style="color:#0052a5; margin-top:5px;">Tel: 00 33 3 26 51 00 13</span>
+    </div>
+</div>
+</body>
+</html>
+<br>
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lauwers Reisoverzicht</title>
+    <style>
+        body { font-family: sans-serif; margin: 0; padding: 5px; color: #000; line-height: 1.2; }
+        .container { border: 2px solid #333; border-radius: 8px; overflow: hidden; }
+        
+        .header { background: #333; color: white; padding: 8px; text-align: center; }
+        .po-box { background: #fff; color: #333; display: inline-block; padding: 4px 12px; border-radius: 5px; font-weight: bold; font-size: 18px; margin-top: 4px; }
+        
+        table { width: 100%; border-collapse: collapse; background: white; }
+        th { background: #f2f2f2; font-size: 10px; text-transform: uppercase; padding: 6px; border-bottom: 2px solid #333; text-align: left; }
+        td { padding: 8px 6px; border-bottom: 1px solid #eee; font-size: 13px; vertical-align: top; }
+        
+        .date { font-weight: bold; color: #0052a5; white-space: nowrap; font-size: 12px; }
+        .desc { font-weight: bold; display: block; }
+        .details { font-size: 12px; color: #444; margin-top: 2px; }
+        .time { font-weight: bold; color: #d93025; font-size: 14px; }
+
+        .extra-info { background: #f9f9f9; padding: 10px; font-size: 12px; border-top: 2px solid #333; }
+        .label-small { font-size: 10px; color: #666; font-weight: bold; text-transform: uppercase; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <div style="font-size: 14px; text-transform: uppercase; letter-spacing: 1px;">Reisoverzicht</div>
+        <div class="po-box">PO: 1047750 / 1</div>
+        <div style="font-size: 10px; margin-top: 4px;">Issued: 22.mei.2026</div>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Datum</th>
+                <th>Omschrijving / Regime</th>
+                <th style="text-align:right;">V / A</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Heenreis -->
+            <tr>
+                <td class="date">05/06/26<br>05/06/26</td>
+                <td>
+                    <span class="desc">BUS HEEN CHAMPAGNE</span>
+                    <span class="details">BUS 61</span>
+                </td>
+                <td style="text-align:right;"><span class="time">04:50</span><br><small>V.</small></td>
+            </tr>
+            <!-- Hotel -->
+            <tr>
+                <td class="date">05/06/26<br>07/06/26</td>
+                <td>
+                    <span class="desc">PRIM'HOTEL BAGATELLE</span>
+                    <span class="details" style="color: #28a745; font-weight: bold;">HALFPENSION</span>
+                </td>
+                <td></td>
+            </tr>
+            <!-- Terugreis -->
+            <tr>
+                <td class="date">07/06/26<br>07/06/26</td>
+                <td>
+                    <span class="desc">BUS TERUG CHAMPAGNE</span>
+                    <span class="details">BUS 61</span>
+                </td>
+                <td style="text-align:right;"><span class="time">22:10</span><br><small>A.</small></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="extra-info">
+        <span class="label-small">Overige informatie</span>
+        <div style="display: flex; justify-content: space-between; margin-top: 4px;">
+            <span class="date">05/06 - 07/06</span>
+            <span style="font-weight: bold;">2x GEEN VERZEKERING GEWENST</span>
+        </div>
+    </div>
+</div>
+<!-- ... (Bestaande inhoud van Overzicht & Thuisblijvers) ... -->
+<style>
+    .nav-footer { margin-top: 5px; padding: 5px; text-align: center; }
+    .btn-back { 
+        display: inline-block; 
+        background: #333; /* Grijs/Zwart, passend bij overzichtstijl */
+        color: white; 
+        padding: 15px 30px; 
+        text-decoration: none; 
+        border-radius: 10px; 
+        font-weight: bold; 
+        box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    }
+</style>
+<div class="nav-footer">
+    <a href="index.html" class="btn-back">⬅ Terug naar Menu</a>
+</div>
+
+</body>
+</html>

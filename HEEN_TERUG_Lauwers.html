@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lauwers Voucher</title>
+    <style>
+        body { font-family: sans-serif; background-color: #fff; margin: 0; padding: 5px; color: #000; line-height: 1.2; }
+        .container { border: 2px solid #0052a5; border-radius: 8px; overflow: hidden; }
+        
+        /* Header met focus op PO-nummer */
+        .header { background: #0052a5; color: white; padding: 8px; text-align: center; }
+        .po-box { background: #fff; color: #0052a5; display: inline-block; padding: 5px 15px; border-radius: 5px; font-weight: bold; font-size: 20px; margin-top: 5px; border: 1px solid #000; }
+        .header-title { font-size: 14px; text-transform: uppercase; margin: 0; }
+
+        .section { padding: 8px 12px; border-bottom: 1px solid #ddd; }
+        .grid { display: flex; justify-content: space-between; border-bottom: 1px solid #ddd; }
+        .grid-item { padding: 8px 12px; flex: 1; }
+        .br { border-right: 1px solid #ddd; }
+
+        .label { font-size: 11px; color: #555; text-transform: uppercase; font-weight: bold; display: block; }
+        .value { font-size: 16px; font-weight: bold; display: block; }
+        .big-value { font-size: 22px; color: #d93025; font-weight: 900; }
+        .blue-value { font-size: 24px; color: #0052a5; font-weight: bold; }
+
+        .passengers { background: #f2f2f2; font-size: 14px; font-weight: bold; }
+        
+        .footer-info { font-size: 10px; color: #444; padding: 8px; background: #fafafa; text-align: center; }
+        .bagage { font-weight: bold; border: 1px solid #ccc; display: inline-block; padding: 2px 6px; margin-top: 4px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <p class="header-title">Lauwers Reisvoucher</p>
+        <div class="po-box">PO: 1047750 / 1</div>
+        <div style="font-size: 10px; margin-top: 4px;">Issued: 22.mei.2026</div>
+    </div>
+
+    <div class="section">
+        <span class="label">Bestemming</span>
+        <span class="value">BUS HEEN CHAMPAGNE</span>
+    </div>
+
+    <div class="grid">
+        <div class="grid-item br">
+            <span class="label">Datum</span>
+            <span class="value">05 JUNI 2026</span>
+        </div>
+        <div class="grid-item">
+            <span class="label">Vertrek om</span>
+            <span class="big-value">04:50</span>
+        </div>
+    </div>
+
+    <div class="section">
+        <span class="label">Opstapplaats</span>
+        <span class="value">LUMMEN</span>
+        <span style="font-size: 13px;">Carpoolparking E314 Uitrit 26</span>
+    </div>
+
+    <div class="grid" style="background: #e7f3ff;">
+        <div class="grid-item br">
+            <span class="label">Bus Nr</span>
+            <span class="blue-value">61</span>
+        </div>
+        <div class="grid-item">
+            <span class="label">Zitplaats(en)</span>
+            <span class="blue-value">23, 24</span>
+        </div>
+    </div>
+
+    <div class="section passengers">
+        <span class="label">Passagiers</span>
+        <div style="display: flex; justify-content: space-between;">
+            <span>Mr SLEEUWAERT FREDDY</span>
+            <span>64j</span>
+        </div>
+        <div style="display: flex; justify-content: space-between;">
+            <span>Mrs SLEEUWAERT VALERIE</span>
+            <span>35j</span>
+        </div>
+    </div>
+
+    <div class="footer-info">
+        <div class="bagage">BAGAGE: MAX 1 KOFFER (20KG) P.P.</div>
+        <p style="margin: 5px 0 0 0;">Klasse: SPC PRINCESS CLASS | Info: www.lauwers.be</p>
+    </div>
+</div>
+
+</body>
+</html>
+<br>
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { font-family: sans-serif; margin: 0; padding: 5px; line-height: 1.2; }
+        .container { border: 2px solid #0052a5; border-radius: 8px; overflow: hidden; }
+        .header { background: #0052a5; color: white; padding: 8px; text-align: center; }
+        .po-box { background: #fff; color: #0052a5; display: inline-block; padding: 4px 12px; border-radius: 5px; font-weight: bold; font-size: 18px; margin-top: 4px; }
+        .section { padding: 8px 12px; border-bottom: 1px solid #ddd; }
+        .label { font-size: 11px; color: #666; font-weight: bold; }
+        .value { font-size: 16px; font-weight: bold; display: block; }
+        .blue-value { font-size: 24px; color: #0052a5; font-weight: bold; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div style="font-size: 14px;">VOUCHER TERUGREIS</div>
+        <div class="po-box">PO: 1047750 / 1</div>
+    </div>
+    <div class="section">
+        <span class="label">Busrit</span>
+        <span class="value">BUS TERUG CHAMPAGNE</span>
+    </div>
+    <div class="section">
+        <span class="label">Vertrek ter plaatse</span>
+        <span class="value">07 JUNI 2026</span>
+    </div>
+    <div class="section" style="display:flex; background:#e7f3ff;">
+        <div style="flex:1; border-right:1px solid #ddd; padding:5px;">
+            <span class="label">Bus</span><br><span class="blue-value">61</span>
+        </div>
+        <div style="flex:1; padding:5px;">
+            <span class="label">Zitplaatsen</span><br><span class="blue-value">23, 24</span>
+        </div>
+    </div>
+    <div class="section">
+        <span class="label">Aankomst Lummen</span>
+        <span class="value">07/06/26 om ± 22:10</span>
+    </div>
+</div>
+<!-- ... (Bestaande inhoud van Heen & Terug) ... -->
+<style>
+    .nav-footer { margin-top: 5px; padding: 5px; text-align: center; }
+    .btn-back { 
+        display: inline-block; 
+        background: #0052a5; 
+        color: white; 
+        padding: 15px 30px; 
+        text-decoration: none; 
+        border-radius: 10px; 
+        font-weight: bold; 
+        box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    }
+</style>
+<div class="nav-footer">
+    <a href="index.html" class="btn-back">⬅ Terug naar Menu</a>
+</div>
+</body>
+</html>
